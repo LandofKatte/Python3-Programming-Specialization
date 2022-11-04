@@ -15,3 +15,14 @@ t = int(input("Compound for how many years? "))
 final = P * ( ((1 + (r/n)) ** (n * t)) )
 
 print("The final amount after", t, "years is", final)
+
+________________________________________________________
+
+Write a program that will compute the area of a circle. Prompt the user to enter the radius and save it to avariable called radius. Print a nice message back to the user with the answer.
+
+#A = πr2
+pi = 3.14
+radius = int(input("What is the radius of the circle? "))
+area_of_circle = pi * (radius**2)
+
+print("The area of a circle is ", area_of_circle)
