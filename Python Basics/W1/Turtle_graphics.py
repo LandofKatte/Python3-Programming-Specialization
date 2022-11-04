@@ -73,7 +73,36 @@ alex.forward(50)
 alex.left(90)
 
 wn.exitonclick()
+________________________________________________________________________
+#Spiral example using For Loop
 
+import turtle
+wn = turtle.Screen()
+
+elan = turtle.Turtle()
+
+distance = 50
+for _ in range(10):
+    elan.forward(distance)
+    elan.right(90)
+    distance = distance + 10
+
+    
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+tess = turtle.Turtle()
+tess.color("blue")
+tess.shape("turtle")          #actually turtle shaped
+
+dist = 5
+tess.up()                     # this is new (moves pen up off canvas so doesnt leave line)
+for _ in range(30):    # start with size = 5 and grow by 2
+    tess.stamp()                # leave an impression on the canvas
+    tess.forward(dist)          # move tess along
+    tess.right(24)              # and turn her
+    dist = dist + 2
+wn.exitonclick()
 ________________________________________________________________________
 
 import turtle             # allows us to use the turtles library
@@ -87,3 +116,21 @@ alex.circle(50,200)
 alex.forward(133)
 
 #creates a heart :)
+
+____________________________________________________________________________
+
+#For loop
+
+import turtle
+wn = turtle.Screen()
+alex = turtle.Turtle() 
+
+for _ in range(7):
+    alex.left(50)
+    alex.forward(133)         
+    alex.circle(50,200)            
+    alex.right(140)
+    alex.circle(50,200)
+    alex.forward(133)
+
+#looks like overlapping clover hearts
