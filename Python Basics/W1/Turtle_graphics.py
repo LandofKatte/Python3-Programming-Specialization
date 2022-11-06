@@ -146,3 +146,124 @@ for _ in range(7):
     alex.forward(133)
 
 #looks like overlapping clover hearts
+_____________________________________________________________________________________
+
+""""
+
+Use for loops to make a turtle draw these regular polygons (regular means all sides the same lengths, all angles the same):
+
+    An equilateral triangle
+
+    A square
+
+    A hexagon (six sides)
+
+    An octagon (eight sides)
+
+""""
+
+# draw an equilateral triangle
+import turtle
+
+wn = turtle.Screen()
+norton = turtle.Turtle()
+
+for i in range(3):
+    norton.forward(100)
+
+    # the angle of each vertice of a regular polygon
+    # is 360 divided by the number of sides
+    norton.left(360/3)
+
+wn.exitonclick()
+
+# draw a square
+import turtle
+
+wn = turtle.Screen()
+squirtle = turtle.Turtle()
+
+for i in range(4):
+    squirtle.forward(100)
+    squirtle.left(360/4)
+
+wn.exitonclick()
+
+# draw a hexagon
+import turtle
+
+wn = turtle.Screen()
+turthex = turtle.Turtle()
+
+for i in range(6):
+    turthex.forward(100)
+    turthex.left(360/6)
+
+wn.exitonclick()
+
+# draw an octogon
+import turtle
+
+wn = turtle.Screen()
+octo = turtle.Turtle()
+
+for i in range(8):
+    octo.forward(75)
+    octo.left(360/8)
+
+wn.exitonclick()
+
+__________________________________________
+#star of david
+import turtle
+
+star = turtle.Turtle()
+
+for i in range(5):
+    star.forward(110)
+    star.left(216)
+______________________________________________ 
+#multi-stars
+import turtle
+  
+# number of sides
+n = 10
+  
+# creating instance of turtle
+pen = turtle.Turtle()
+  
+# loop to draw a side
+for i in range(n):
+    # drawing side of 
+    # length i*10
+    pen.forward(i * 10)
+  
+    # changing direction of pen 
+    # by 144 degree in clockwise
+    pen.right(144)
+  
+# closing the instance
+turtle.done()
+_____________________________________________
+#cool busy spiral-star
+import turtle
+
+turing = turtle.Turtle()
+
+turing.hideturtle()
+turing.speed(20)
+
+for i in range(150):
+    turing.forward(i)
+    turing.right(98)
+    
+___________________________________________________
+#circle
+
+import turtle
+    
+tur = turtle.Turtle()
+  
+tur.circle(-50)
+turtle.done()
+_____________________________________________
