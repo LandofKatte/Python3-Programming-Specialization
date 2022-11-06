@@ -73,6 +73,18 @@ alex.forward(50)
 alex.left(90)
 
 wn.exitonclick()
+__________________
+
+import turtle
+wn = turtle.Screen()
+june = turtle.Turtle()
+
+for _ in range(4):
+    june.color("green", "yellow")
+    june.forward(50)
+    june.right(90)
+
+    #line colored-for loop square
 ________________________________________________________________________
 #Spiral example using For Loop
 
