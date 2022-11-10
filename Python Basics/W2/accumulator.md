@@ -88,3 +88,4 @@ print(count)
 
 10
 ```
+In this example we don’t make use of w even though the iterator variable (loop variable) is a necessary part of constructing a for loop. Instead of adding the value of w to count we add a 1 to it, because we’re incrementing the value of count when we iterate each time through the loop. Though in this scenario we could have used the len function, there are other cases later on where len won’t be useful but we will still need to count.
