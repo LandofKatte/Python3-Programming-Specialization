@@ -118,3 +118,24 @@ _____________________________________________
 
 nums = list(range(0, 68))
 print(nums)
+____________________________________
+#Write code to create a list of word lengths for the words in original_str using the accumulation pattern and assign the answer to a variable num_words_list. (You should use the len function).
+
+original_str = "The quick brown rhino jumped over the extremely lazy fox"
+
+original_list = list(original_str.split())
+num_words = len(original_list)
+num_words_list = []
+for i in original_list:
+    num_words_list.append((len(i)))
+
+print(num_words_list)
+
+[3, 5, 5, 5, 6, 4, 3, 9, 4, 3]
+_______________________________________________
+#Create an empty string and assign it to the variable lett. Then using range, write code such that when your code is run, lett has 7 b’s ("bbbbbbb").
+
+lett = ""
+for i in range(7):
+    lett += 'b'
+print(lett)
