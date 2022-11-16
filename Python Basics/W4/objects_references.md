@@ -2,10 +2,10 @@
 
 If we execute these assignment statements,
 
-a = "banana"
-b = "banana"
+    a = "banana"
+    b = "banana"
 
-we know that a and b will refer to a string with the letters "banana". But we don’t know yet whether they point to the same string.
+we know that a and b will refer to a string with the letters "banana". But we don’t know yet whether they point to the same string. (aliases of each other)
 
 There are two possible ways the Python interpreter could arrange its internal states:
 
@@ -37,6 +37,8 @@ print(id(b))
 2
 2
 ```
+(aliases - same IDs)
+
 Since strings are immutable, the Python interpreter often optimizes resources by making two names that refer to the same string value refer to the same object. You shouldn’t count on this (that is, use == to compare strings, not is), but don’t be surprised if you find that two variables,each bound to the string “banana”, have the same id..
 
 This is not the case with lists, which never share an id just because they have the same contents. Consider the following example. Here, a and b refer to two different lists, each of which happens to have the same element values. They need to have different ids so that mutations of list a do not affect list b.
@@ -56,6 +58,8 @@ True
 3
 4
 ```
+(lists are not aliases of each other - different IDs)
+
 The reference diagram for this example looks like this:
 
 ![image](https://user-images.githubusercontent.com/103328611/202057170-ef0be776-ab33-456f-b6de-2b580336d2e3.png)
