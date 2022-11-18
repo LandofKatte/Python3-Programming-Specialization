@@ -15,20 +15,21 @@ with <create some object that understands context> as <some name>:
 
 When the program exits the with block, the context manager handles the common stuff that normally happens at the end, in our case closing a file. A simple example will clear up all of this abstract discussion of contexts. Here are the contents of a file called “mydata.txt”.
 Data file: mydata.txt
-
+```
 1 2 3
 4 5 6
-
+```   
+```
 with open('mydata.txt', 'r') as md:
     for line in md:
         print(line)
-  
+ ``` 
 The first line of the with statement opens the file and assigns it to the variable md. Then we can iterate over the file in any of the usual ways. When we are done we simply stop indenting and let Python take care of closing the file and cleaning up.
 
 This is equivalent to code that specifically closes the file at the end, but neatly marks the set of code that can make use of the open file as an indented block, and ensures that the programmer won’t forget to include the .close() invocation.
-  
+ ``` 
 md = open('mydata.txt', 'r')
 for line in md:
     print(line)
-md.close()
-  
+md.close() 
+```
