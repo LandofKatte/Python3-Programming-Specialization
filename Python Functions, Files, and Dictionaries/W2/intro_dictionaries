@@ -1,0 +1,3 @@
+# Introduction: Dictionaries
+
+This sort of direct look up of a value in Python is done with an object called a Dictionary. Dictionaries are a different kind of collection. They are Python’s built-in mapping type. A map is an unordered, associative collection. The association, or mapping, is from a key, which can be of any immutable type (e.g., the chapter name and number in the analogy above), to a value (the starting page number), which can be any Python data object.
