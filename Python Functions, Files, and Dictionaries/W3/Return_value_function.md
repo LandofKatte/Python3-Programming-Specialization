@@ -212,6 +212,53 @@ Two printed lines, and then the function body execution reaches a return stateme
 
 Write a function named same that takes a string as input, and simply returns that string.
 ```
+def same (string):
+    return string
+```
 
 
+Write a function called same_thing that returns the parameter, unchanged.
+```
+def same_thing(i):
+    return i
+```
 
+
+Write a function called subtract_three that takes an integer or any number as input, and returns that number minus three.
+```
+def subtract_three(i):
+    return i-3
+```
+
+
+Write a function called change that takes one number as its input and returns that number, plus 7.
+```
+def change(i):
+    return i+7
+```
+
+
+Write a function named intro that takes a string as input. This string ist intended to be a person’s name and the output is a standardized greeting. For example, given the string “Becky” as input, the function should return: “Hello, my name is Becky and I love SI 106.”
+```
+def intro(strng):
+    return("Hello, my name is "+ strng+ " and I love SI 106.")
+
+intro("Becky")
+```
+
+
+Write a function called s_change that takes one string as input and returns that string, concatenated with the string ” for fun.”.
+```
+def s_change(i):
+    return i + " for fun."
+```
+
+
+Write a function called decision that takes a string as input, and then checks the number of characters. If it has over 17 characters, return “This is a long string”, if it is shorter or has 17 characters, return “This is a short string”.
+```
+def decision(strng):
+    if len(strng) > 17:
+        return ("This is a long string")
+    else:
+        return ("This is a short string")
+```
