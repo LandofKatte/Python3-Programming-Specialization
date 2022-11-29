@@ -39,4 +39,19 @@ A function, whether named or anonymous, can be called by placing parentheses () 
 Some students find it more natural to work with lambda expressions than to refer to a function by name. Others find the syntax of lambda expressions confusing. It’s up to you which version you want to use though you will need to be able to read and understand lambda expressions that are written by others. In all the examples below, both ways of doing it will be illustrated.
 
 Say we want to create a function that takes a string and returns the last character in that string. What might this look like with the functions you’ve used before?
-  
+```  
+def last_char(s):
+    return s[-1]
+    
+equivalent of:
+
+last_char = lambda s: s[-1]
+last_char = (lambda s: s[-1])
+```
+Note that neither function is actually invoked. Look at the parallels between the two structures. The parameters are defined in both functions with the variable s. In the typical function, we have to use the keyword return to send back the value. In a lambda function, that is not necessary - whatever is placed after the colon is what will be returned.
+    
+
+If the input to this lambda function is a number, what is returned?
+(lambda x: -x)
+
+A number of the opposite sign (positive number becomes negative, negative becomes positive).
