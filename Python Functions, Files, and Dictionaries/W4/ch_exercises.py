@@ -93,3 +93,28 @@ wn.exitonclick()
 
 
 #Use a while loop to iterate through the numbers 0 through 35. If a number is divisible by 3, it should be appended to a list called three_nums.
+
+
+
+______________________________________________________________________________
+#ch15
+
+#Fill in the parameter list for g so that the invocations of g yield the return values specified
+
+#EDIT CODE
+def g():
+    return 2*x + y + z
+print(g(3))       # should output 10
+print(g(3, 2))    # should output 8
+print(g(3, 2, 1)) #should output 9
+
+
+#Define a function called nums that has three parameters. The first parameter, an integer, should be required. A second parameter named mult_int should be optional with a default value of 5. The final parameter, switch, should also be optional with a default value of False. The function should multiply the two integers together, and if switch is True, should change the sign of the product before returning it.
+
+def nums():
+    pass #remove this once you start writing the function
+
+#WRITE CODE
+
+
+#Write a function called together that takes three parameters, the first is a required parameter that is a number (integer or float), the second is a required parameter that is a string, and the third is an optional parameter whose default is ” “. What is returned is the first parameter, concatenated with the second, using the third.
