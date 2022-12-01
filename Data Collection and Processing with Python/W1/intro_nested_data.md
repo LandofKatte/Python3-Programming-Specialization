@@ -89,13 +89,19 @@ dict
 
 Try practicing some operations to get or set values in a list of dictionaries.
 ```
+nested2 = [{'a': 1, 'b': 3}, {'a': 5, 'c': 90, 5: 50}, {'b': 3, 'c': "yes"}]
 
-
-
-
-
+#write code to print the value associated with key 'c' in the second dictionary (90)
+print(nested2[1]['c'])
+#write code to print the value associated with key 'b' in the third dictionary
+print(nested2[2]['b'])
+#add a fourth dictionary add the end of the list; print something to check your work.
+???
+print(nested2)
+#change the value associated with 'c' in the third dictionary from "yes" to "no"; print something to check your work
+nested2[2]['c'] = "no"
+print(nested2)
 ```
-
 You can even have a list of functions (!).
 ```
 def square(x):
@@ -127,4 +133,25 @@ print(L[0](3))
 <function square>
 9
 ```
+Here, L is a list with three items. All those items are functions. The first is the function square that is defined on lines 1 and 2. The second is the built-in python function abs. The third is an anonymous function that returns one more than its input.
 
+In the first for loop, we do not call the functions, we just output their printed representations. The output <function square> confirms that square truly is a function object. For some reason, in our online environment, it’s not able to produce a nice printed representation of the built-in function abs, so it just outputs <unknown>
+
+In the second for loop, we call each of the functions, passing in the value -2 each time and printing whatever value the function returns.
+
+The last two lines just emphasize that there’s nothing special about lists of functions. They follow all the same rules for how python treats any other list. Because L[0] picks out the function square, L[0](3) calls the function square, passing it the parameter 3.
+	
+
+Below, we have provided a list of lists. Use indexing to assign the element ‘horse’ to the variable name idx1.
+```
+animals = [['cat', 'dog', 'mouse'], ['horse', 'cow', 'goat'], ['cheetah', 'giraffe', 'rhino']]
+
+idx1 = animals[1][0]
+```
+
+Using indexing, retrieve the string ‘willow’ from the list and assign that to the variable plant.	
+```
+data = ['bagel', 'cream cheese', 'breakfast', 'grits', 'eggs', 'bacon', [34, 9, 73, []], [['willow', 'birch', 'elm'], 'apple', 'peach', 'cherry']]
+
+plant = data[7][0][0]
+```
