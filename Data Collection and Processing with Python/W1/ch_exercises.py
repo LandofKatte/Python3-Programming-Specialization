@@ -21,10 +21,20 @@ pokemon = {'Trainer1':
 
 #Below, we have provided a nested list called big_list. Use nested iteration to create a dictionary, word_counts, that contains all the words in big_list as keys, and the number of times they occur as values.
 
-big_list = [[['one', 'two'], ['seven', 'eight']], [['nine', 'four'], ['three', 'one']], [['two', 'eight'], ['seven', 'four']], [['five', 'one'], ['four', 'two']], [
+big_list = [[['one', 'two'], ['seven', 'eight']], [['nine', 'four'], ['three', 'one']], [['two', 'eight'], ['seven', 'four']], [['five', 'one'], ['four', 'two']], [['six', 'eight'], ['two', 'seven']], [['three', 'five'], ['one', 'six']], [['nine', 'eight'], ['five', 'four']], [['six', 'three'], ['four', 'seven']]]
 
+word_counts = {}
+
+for innerlst1 in big_list:
+    for innerlst2 in innerlst1:
+        for word in innerlst2:
+            if word in word_counts:
+                word_counts[word] += 1
+            else:
+                word_counts[word] = 1
+print(word_counts)
   
-  
+{'one': 4, 'two': 4, 'seven': 4, 'eight': 4, 'nine': 2, 'four': 5, 'three': 3, 'five': 3, 'six': 3}
 
 
 #Provided is a dictionary that contains pokemon go player data, where each player reveals the amount of candy each of their pokemon have. If you pooled all the data together, which pokemon has the highest number of candy? Assign that pokemon to the variable most_common_pokemon.
