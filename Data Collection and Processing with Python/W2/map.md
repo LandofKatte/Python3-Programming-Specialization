@@ -88,3 +88,14 @@ OR
 abbrevs_upper = map(lambda st: st.upper(), abbrevs)
 
 print(abbrevs_upper)
+```
+^
+### need to cast to list because it returns an iterable.
+```
+greeting_doubled=list(map((lambda value: 2*value), lst))
+print(greeting_doubled)
+
+For the second one:
+abbrevs_upper=list(map(lambda x: x.upper(), abbrevs))
+print(abbrevs_upper)
+```
