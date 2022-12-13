@@ -12,7 +12,7 @@ In our limited implementation of the requests library for the Runestone environm
 
         In that case, you should examine the url to try to figure out what went wrong. In particular, print it, then copy and paste it to a browser window and see what happens.
 
-## In a full python environment
+## In a full python environment ***
 
 In a full python environment, you will not always get a Response object back from a call to requests.get. What you get back will generally be even more informative than what you get in the Runestone environment, but you have to know where to look.
 
