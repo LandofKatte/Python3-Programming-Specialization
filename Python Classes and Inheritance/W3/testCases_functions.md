@@ -60,3 +60,8 @@ ERROR
 If you write a complete set of tests and a function passes all the tests, you can be sure that it’s working correctly.
 
 FALSE; The tests should cover as many edge cases as you can think of, but there's always a possibility that the function does badly on some input that you didn't include as a test case.
+
+
+For the hangman game, the blanked function takes a word and some letters that have been guessed, and returns a version of the word with _ for all the letters that haven’t been guessed. Which of the following is the correct way to write a test to check that ‘under’ will be blanked as 'u_d__' when the user has guessed letters d and u so far?
+
+assert blanked('under', 'du') == 'u_d__'
